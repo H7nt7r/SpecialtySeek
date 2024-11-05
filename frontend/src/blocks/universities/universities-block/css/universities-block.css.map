@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,uCAA+B;AAC/B,uCAA+B;AAC/B,uCAA+B;AAC/B,2DAAmD;AACnD,yDAAiD;AACjD,yCAAiC;AACjC,yCAAiC;AACjC,mCAA2B;AAC3B,mCAA2B;AAC3B,uCAA+B;AAC/B,qCAA6B;AAC7B,qDAA6C;AAC7C,+CAAuC;AAE/C,mBAAmB;EACf,KAAK,EAAE,IAAI",
+"sources": ["../sass/universities-block.scss"],
+"names": [],
+"file": "universities-block.css"
+}

@@ -1,0 +1,30 @@
+@import url(/blocks/header/css/header.css);
+@import url(../sp/css/sp.css);
+@import url(/blocks/footer/css/footer.css);
+
+html{
+    font-family: Century Gothic;
+    src: url(/fonts/GothicA1-Regular.ttf);
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1830px;
+    margin: 0% auto;
+    padding: 0 15px 0 15px;
+}
+
+
+.container-speciality{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}

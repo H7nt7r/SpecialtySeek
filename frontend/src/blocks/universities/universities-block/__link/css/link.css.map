@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yBAAyB;EACrB,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,QAAQ;EAClB,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,IAAI;EACrB,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,OAAO;EACf,KAAK,EAAE,KAAK",
+"sources": ["../sass/link.scss"],
+"names": [],
+"file": "link.css"
+}

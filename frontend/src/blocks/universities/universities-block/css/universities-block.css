@@ -1,0 +1,18 @@
+@import url(../__block1/css/block1.css);
+@import url(../__block2/css/block2.css);
+@import url(../__block3/css/block3.css);
+@import url(../__title-university/css/title-university.css);
+@import url(../__text-university/css/text-university.css);
+@import url(../__column1/css/column1.css);
+@import url(../__column2/css/column2.css);
+@import url(../__link/css/link.css);
+@import url(../__text/css/text.css);
+@import url(../__arrows/css/arrows.css);
+@import url(../__title/css/title.css);
+@import url(../__search-string/css/search-string.css);
+@import url(../__magn-glass/css/magn-glass.css);
+.universities-block {
+  width: 100%;
+  min-height: 70vh; }
+
+/*# sourceMappingURL=universities-block.css.map */

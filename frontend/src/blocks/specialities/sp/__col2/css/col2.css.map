@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAS;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM",
+"sources": ["../sass/col2.scss"],
+"names": [],
+"file": "col2.css"
+}

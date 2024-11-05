@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAe;EACX,OAAO,EAAE,IAAI",
+"sources": ["../sass/block-link.scss"],
+"names": [],
+"file": "block-link.css"
+}

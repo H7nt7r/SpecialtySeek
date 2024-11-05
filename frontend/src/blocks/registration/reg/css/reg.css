@@ -1,0 +1,13 @@
+@import url(../__block/css/block.css);
+@import url(../__form/css/form.css);
+@import url(../__title/css/title.css);
+@import url(../__label/css/label.css);
+@import url(../__input/css/input.css);
+@import url(../__button/css/button.css);
+.reg {
+  background-image: url(/src/img/background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 870px; }
+
+/*# sourceMappingURL=reg.css.map */

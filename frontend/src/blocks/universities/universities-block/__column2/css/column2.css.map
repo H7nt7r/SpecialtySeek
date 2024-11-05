@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,4BAA4B;EACxB,KAAK,EAAE,GAAG;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,aAAa",
+"sources": ["../sass/column2.scss"],
+"names": [],
+"file": "column2.css"
+}

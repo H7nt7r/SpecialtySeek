@@ -1,0 +1,19 @@
+.sp__button{
+    font-size: 40px;
+    width: 200px;
+    height: 85px;
+    border-radius: 15px;
+    border: none;
+    font-family: Century Gothic;
+    src: url(/fonts/GothicA1-Regular.ttf);
+    margin-top: 2%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.sp__button:hover{
+    background-color: #38205E;
+    color: white;
+    transition: 0.3s ease;
+    transform: scale(105%);
+}

@@ -1,0 +1,8 @@
+.universities-block__arrows {
+  transition: 0.3s ease; }
+
+.universities-block__link:hover .universities-block__arrows {
+  transform: translateX(40%);
+  transition: 0.3s ease; }
+
+/*# sourceMappingURL=arrows.css.map */

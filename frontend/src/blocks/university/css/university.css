@@ -1,0 +1,147 @@
+@import url(/src/blocks/header/css/header.css);
+@import url(../university-block/css/university-block.css);
+@import url(/src/blocks/footer/css/footer.css);
+html {
+  font-family: Century Gothic;
+  src: url(/src/fonts/GothicA1-Regular.ttf);
+  scroll-behavior: smooth; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1830px;
+  margin: 0% auto;
+  padding: 0 15px 0 15px; }
+
+.container-university {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%; }
+
+.university-block__reviews{
+  margin-top: 30px;
+  border-radius: 15px;
+  width: 60%;
+  background-color: #38205E;
+  border: 1px solid #000;
+  padding: 1%;
+}
+
+.title__reviews{
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+}
+
+.review{
+  height: fit-content;
+  border: 1px solid #38205E;
+  border-radius: 15px;
+  padding: 2%;
+  word-break: break-all;
+  margin-top: 30px;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.author__reviews{
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.date__reviews{
+  display: flex;
+  justify-content: right;
+  margin-top: 1%;
+}
+
+.empty__reviews{
+  word-break: break-all;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.form__reviews{
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.review-textarea{
+  font-size: 18px;
+  display: flex;
+  border: 2px solid #000;
+  width: 30%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.review-submit-button{
+  font-size: 20px;
+  width: 15%;
+  margin-left: 2%;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  transition: all 500ms ease;
+}
+
+.review-submit-button:hover{
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #5d4780;
+  border: 2px solid #fff;
+}
+
+.delete__button{
+  cursor: pointer;
+  font-size: 20px;
+  width: 10%;
+  height: 30px;
+  background-color: red;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  transition: all 500ms ease;
+}
+
+.delete__button:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 770px){
+  .university-block__title{
+    font-size: 28px;
+  }
+  p{
+    font-size: 16px;
+    text-align: justify;
+  }
+  .university-block__link{
+    font-size: 20px;
+  }
+  .university-block__reviews{
+    width: 80%;
+  }
+  .delete__button{
+    width: 20%;
+  }
+  .review-submit-button{
+    width: 20%;
+  }
+  .review-textarea{
+    width: 40%;
+  }
+  img{
+    margin: 0%;
+  }
+}
+/*# sourceMappingURL=university.css.map */

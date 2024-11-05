@@ -1,0 +1,18 @@
+.reg__button {
+  background-color: white;
+  margin: 0 auto;
+  display: block;
+  width: 328px;
+  height: 100px;
+  border-radius: 25px;
+  font-size: 36px;
+  border: none;
+  transition: 0.3s ease; }
+
+.reg__button:hover {
+  background-color: #38205E;
+  color: white;
+  transition: 0.3s ease;
+  transform: scale(105%); }
+
+/*# sourceMappingURL=button.css.map */

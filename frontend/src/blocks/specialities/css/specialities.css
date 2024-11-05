@@ -1,0 +1,97 @@
+@import url(/src/blocks/header/css/header.css);
+@import url(/src/blocks/specialities/sp/css/sp.css);
+@import url(/src/blocks/footer/css/footer.css);
+html {
+  font-family: Century Gothic;
+  src: url(/src/fonts/GothicA1-Regular.ttf);
+  scroll-behavior: smooth; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1830px;
+  margin: 0% auto;
+  padding: 0 15px 0 15px; }
+
+.container-specialities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%; }
+
+  .sp__text2 {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    margin-top: 20px; }
+
+  .sp__no-results{
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  @media (max-width: 1200px){
+    label{
+      font-size: 20px;
+      margin-top: 7%;
+    }
+    .sp__discipline{
+      display: flex;
+      align-items: center;
+    }
+    .universities-block__title-university{
+      font-size: 24px;
+    }
+    .universities-block__block3{
+      justify-content: center;
+    }
+    .universities-block__text-university{
+      font-size: 20px;
+    }
+    .universities-block__column1 img{
+      display: none;
+    }
+    .universities-block__link{
+      font-size: 20px;
+    }
+    .universities-block__search-string{
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px){
+    .sp__title1{
+      font-size: 24px;
+    }
+    .sp__subtitle{
+      font-size: 24px;
+    }
+    .sp__title2{
+      font-size: 24px;
+    }
+    .sp__title{
+      font-size: 16px;
+    }
+    .sp__text{
+      font-size: 20px;
+    }
+    .sp__text2{
+      font-size: 16px;
+    }
+    label{
+      font-size: 14px;
+      margin-left: 10%;
+      margin-top: 20%;
+    }
+    img{
+      display: none;
+    }
+  }
+
+/*# sourceMappingURL=specialities.css.map */

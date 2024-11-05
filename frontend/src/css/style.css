@@ -1,0 +1,102 @@
+@import url(../blocks/header/css/header.css);
+@import url(../blocks/main/css/main.css);
+@import url(../blocks/footer/css/footer.css);
+html {
+  font-family: Century Gothic;
+  src: url(/src/fonts/GothicA1-Regular.ttf);
+  scroll-behavior: smooth; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1830px;
+  margin: 0% auto;
+  padding: 0 15px 0 15px; }
+
+@media (max-width: 1628px) {
+  .header__item1 {
+    width: 50%; }
+
+  .header__item2 {
+    width: 50%; }
+
+  .header__input {
+    width: 35%;
+    font-size: 16px; }
+
+  .header__menu {
+    width: 70%; }
+
+  .main__title {
+    text-align: center;
+    font-size: 42px; }
+
+  .main__link {
+    font-size: 42px; } }
+@media (max-width: 1200px) {
+  .header__item1 img {
+    width: 90%; }
+
+  .header__item2 {
+    width: 70%; }
+
+  .header__input {
+    width: 35%;
+    font-size: 20px; }
+
+  .header__reg {
+    font-size: 20px; }
+
+  .main__title {
+    font-size: 36px; }
+
+  .main__link {
+    font-size: 36px; }
+
+  .main__block {
+    height: fit-content;
+    padding-bottom: 5%; }
+
+  .main {
+    height: fit-content;
+    padding-bottom: 1%; }
+
+  .header__link {
+    font-size: 32px; }
+
+  .header__button {
+    margin-left: 0;
+    font-size: 20px; } }
+@media (max-width: 1024px) {
+  .header__item2 {
+    display: none; }
+
+  .header__menu {
+    display: none; }
+
+  .main {
+    background-image: none; }
+
+  .header__item3 {
+    display: flex;
+    width: 25%; }
+
+  .header__item1 {
+    width: 70%; } }
+@media (max-width: 770px) {
+  .main__title {
+    font-size: 32px;
+    margin-top: 15%; }
+
+  .main__link {
+    font-size: 32px;
+    margin-top: 5%;
+    margin-bottom: 10%; }
+
+  .burger-menu {
+    height: 100vh; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+@import url(../__block/css/block.css);
+@import url(../__disciplines/css/disciplines.css);
+@import url(../__form/css/form.css);
+@import url(../__input/css/input.css);
+@import url(../__line1/css/line1.css);
+@import url(../__line2/css/line2.css);
+@import url(../__specialities-blocks/css/specialities-blocks.css);
+@import url(../__subtitle/css/subtitle.css);
+@import url(../__title1/css/title1.css);
+@import url(../__title2/css/title2.css);
+@import url(../__discipline/css/discipline.css);
+@import url(../__button/css/button.css);
+@import url(../__col1/css/col1.css);
+@import url(../__col2/css/col2.css);
+@import url(../__title/css/title.css);
+@import url(../__text/css/text.css);
+@import url(../__speciality-block/css/speciality-block.css);
+
+.sp{
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}

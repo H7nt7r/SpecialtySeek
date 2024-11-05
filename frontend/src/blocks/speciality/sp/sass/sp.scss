@@ -1,0 +1,16 @@
+@import url(../__block/css/block.css);
+@import url(../__arrows/css/arrows.css);
+@import url(../__block-link/css/block-link.css);
+@import url(../__image/css/image.css);
+@import url(../__line/css/line.css);
+@import url(../__link/css/link.css);
+@import url(../__text/css/text.css);
+@import url(../__title/css/title.css);
+
+.sp{
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}

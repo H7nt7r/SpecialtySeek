@@ -1,0 +1,10 @@
+.universities-block__link {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black; }
+
+/*# sourceMappingURL=link.css.map */

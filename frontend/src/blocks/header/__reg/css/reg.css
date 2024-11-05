@@ -1,0 +1,12 @@
+.header__reg {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 35px; }
+
+.header__reg:hover {
+  text-decoration: underline; }
+
+/*# sourceMappingURL=reg.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,kBAAkB;EACjB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;;AAEpB,oBAAoB;EACnB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,mBAAmB;EAC7B,GAAG,EAAE,6BAA6B",
+"sources": ["../sass/copyright.scss"],
+"names": [],
+"file": "copyright.css"
+}

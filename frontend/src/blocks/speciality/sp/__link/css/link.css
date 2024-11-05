@@ -1,0 +1,12 @@
+.sp__link {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 5%;
+  margin-top: 5%; }
+
+/*# sourceMappingURL=link.css.map */

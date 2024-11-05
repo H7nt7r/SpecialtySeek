@@ -1,0 +1,61 @@
+@import url(/src/blocks/header/css/header.css);
+@import url(../universities-block/css/universities-block.css);
+@import url(/src/blocks/footer/css/footer.css);
+html {
+  font-family: Century Gothic;
+  src: url(/src/fonts/GothicA1-Regular.ttf);
+  scroll-behavior: smooth; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container-2 {
+  max-width: 1830px;
+  margin: 0% auto;
+  padding: 0 15px 0 15px;
+ }
+
+.container-universities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%; }
+
+.universities-block__no-results{
+  font-size: 36px;
+}
+
+@media (max-width: 770px){
+  .universities-block__title{
+    font-size: 28px;
+  }
+  .universities-block__title-university{
+    font-size: 24px;
+  }
+  .universities-block__block3{
+    justify-content: center;
+  }
+  .universities-block__text-university{
+    font-size: 20px;
+  }
+  .universities-block__column1 img{
+    display: none;
+  }
+  .universities-block__link{
+    font-size: 20px;
+  }
+  .universities-block__search-string{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1628px){
+  .universities-block__column1 img{
+    padding-right: 2%;
+  }
+}
+
+/*# sourceMappingURL=universities.css.map */

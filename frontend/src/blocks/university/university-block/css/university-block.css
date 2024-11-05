@@ -1,0 +1,15 @@
+@import url(../__block1/css/block1.css);
+@import url(../__block2/css/block2.css);
+@import url(../__block3/css/block3.css);
+@import url(../__block4/css/block4.css);
+@import url(../__link/css/link.css);
+@import url(../__text/css/text.css);
+@import url(../__arrows/css/arrows.css);
+@import url(../__title/css/title.css);
+.university-block {
+  width: 100%;
+  margin-top: 20px;
+  min-height: 40vh;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=university-block.css.map */

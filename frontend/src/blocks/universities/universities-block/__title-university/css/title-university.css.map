@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qCAAqC;EACjC,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,6BAA6B;EAClC,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,IAAI",
+"sources": ["../sass/title-university.scss"],
+"names": [],
+"file": "title-university.css"
+}

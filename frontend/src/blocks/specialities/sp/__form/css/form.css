@@ -1,0 +1,22 @@
+.sp__form {
+  width: 100%;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%; }
+
+  .sp__form-disciplines {
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1%; }
+
+/*# sourceMappingURL=form.css.map */

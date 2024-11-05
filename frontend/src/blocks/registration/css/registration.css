@@ -1,0 +1,37 @@
+@import url(/src/blocks/header/css/header.css);
+@import url(/src/blocks/registration/reg/css/reg.css);
+@import url(/src/blocks/footer/css/footer.css);
+html {
+  font-family: Century Gothic;
+  src: url(/src/fonts/GothicA1-Regular.ttf);
+  scroll-behavior: smooth; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1830px;
+  margin: 0% auto;
+  padding: 0 15px 0 15px; }
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.container-reg {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+  .error-message {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/*# sourceMappingURL=registration.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,qCAA6B;AAC7B,mCAA2B;AAC3B,qCAA6B;AAC7B,qCAA6B;AAC7B,qCAA6B;AAC7B,uCAA+B;AAEvC,IAAI;EACA,gBAAgB,EAAE,wBAAwB;EAC1C,eAAe,EAAE,KAAK;EACtB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK",
+"sources": ["../sass/reg.scss"],
+"names": [],
+"file": "reg.css"
+}

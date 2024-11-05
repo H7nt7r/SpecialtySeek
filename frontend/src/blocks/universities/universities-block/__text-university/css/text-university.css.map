@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oCAAoC;EAChC,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,OAAO;EACnB,aAAa,EAAE,IAAI",
+"sources": ["../sass/text-university.scss"],
+"names": [],
+"file": "text-university.css"
+}

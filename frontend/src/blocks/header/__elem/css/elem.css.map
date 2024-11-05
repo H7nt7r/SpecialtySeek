@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAa;EACT,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,KAAK",
+"sources": ["../sass/elem.scss"],
+"names": [],
+"file": "elem.css"
+}

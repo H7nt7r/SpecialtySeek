@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gBAAgB;EACZ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,GAAG",
+"sources": ["../sass/disciplines.scss"],
+"names": [],
+"file": "disciplines.css"
+}

@@ -1,0 +1,15 @@
+.header__item3 {
+  display: none;
+  justify-content: center;
+  align-items: center; }
+
+.header__item3 img {
+  width: 80%; }
+
+.header__item3 button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+/*# sourceMappingURL=item3.css.map */

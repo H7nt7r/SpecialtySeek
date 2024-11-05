@@ -1,0 +1,16 @@
+@import url(../__copyright/css/copyright.css);
+@import url(../__social/css/social.css);
+@import url(../__title/css/title.css);
+@import url(../__email/css/email.css);
+
+.footer{
+	position: absolute;
+	height: 241px;
+	width: 100%;
+	background-color: #38205E;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}

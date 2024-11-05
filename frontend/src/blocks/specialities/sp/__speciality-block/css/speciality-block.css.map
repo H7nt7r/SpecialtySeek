@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBAAqB;EACjB,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,WAAW;EACnB,gBAAgB,EAAE,wBAAkC;EACpD,UAAU,EAAE,EAAE;EACd,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,EAAE;EACX,eAAe,EAAE,IAAI",
+"sources": ["../sass/speciality-block.scss"],
+"names": [],
+"file": "speciality-block.css"
+}

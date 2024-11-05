@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAa;EACT,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,IAAI",
+"sources": ["../sass/subtitle.scss"],
+"names": [],
+"file": "subtitle.css"
+}

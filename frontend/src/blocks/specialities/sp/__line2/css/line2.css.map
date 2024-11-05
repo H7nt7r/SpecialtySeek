@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACN,MAAM,EAAE,eAAe;EACvB,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,EAAE",
+"sources": ["../sass/line2.scss"],
+"names": [],
+"file": "line2.css"
+}

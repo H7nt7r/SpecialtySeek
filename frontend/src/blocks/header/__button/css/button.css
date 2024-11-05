@@ -1,0 +1,20 @@
+.header__button {
+  width: 90px;
+  height: 35px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Century Gothic;
+  src: url(/src/fonts/GothicA1-Regular.ttf);
+  transition: 0.3s ease;
+  border: none;
+  cursor: pointer; }
+
+.header__button:hover {
+  transition: 0.3s ease;
+  transform: scale(105%);
+  background-color: #5d4780;
+  color: white;
+  border: 1px solid white; }
+
+/*# sourceMappingURL=button.css.map */

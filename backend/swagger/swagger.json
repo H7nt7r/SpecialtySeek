@@ -1,0 +1,1595 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "User API",
+      "description": "API for managing users",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3001"
+      }
+    ],
+    
+    "paths": {
+        "/users": {
+          "get": {
+            "summary": "Get all users",
+            "responses": {
+              "200": {
+                "description": "A list of users",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/User"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "post": {
+            "summary": "Create a new user",
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "The newly created user",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/user/{id}": {
+          "get": {
+            "summary": "Get user by ID",
+            "parameters": [
+              {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "The user",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "put": {
+            "summary": "Update user by ID",
+            "parameters": [
+              {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ],
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "The updated user",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "delete": {
+            "summary": "Delete user by ID",
+            "parameters": [
+              {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "The deleted user",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/User"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/specialities": {
+          "get": {
+            "summary": "Get specialities",
+            "parameters": [
+              {
+                  "name": "disciplines",
+                  "in": "query",
+                  "description": "Comma-separated list of disciplines in the format 'name1,name2'",
+                  "required": false,
+                  "schema": {
+                      "type": "string"
+                  }
+              }
+          ],
+            "responses": {
+              "200": {
+                "description": "A list of specialities",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Speciality"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "post": {
+            "summary": "Create a new speciality",
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Speciality"
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "The newly created speciality",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Speciality"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "/specialities/{id}": {
+          "get": {
+            "summary": "Get speciality by ID",
+            "parameters": [
+              {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "The speciality",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Speciality"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "put": {
+            "summary": "Update speciality by ID",
+            "parameters": [
+              {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ],
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Speciality"
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "The updated speciality",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Speciality"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "delete": {
+            "summary": "Delete speciality by ID",
+            "parameters": [
+              {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "schema": {
+                  "type": "integer"
+                }
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "The deleted speciality",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Speciality"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+
+        "/reviews": {
+          "get": {
+            "summary": "Get all reviews",
+            "responses": {
+              "200": {
+                "description": "A list of reviews",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Review"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "post": {
+            "summary": "Create a new review",
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/Review"
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "The newly created review",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Review"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+          "/reviews/{id}": {
+            "get": {
+              "summary": "Get review by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The review",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Review"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "put": {
+              "summary": "Update review by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Review"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The updated review",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Review"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete review by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The deleted review",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Review"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/user_types": {
+            "get": {
+              "summary": "Get all user types",
+              "responses": {
+                "200": {
+                  "description": "A list of user types",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/UserType"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "post": {
+              "summary": "Create a new user type",
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/UserType"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The newly created user type",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UserType"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/user_types/{id}": {
+            "get": {
+              "summary": "Get user type by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The user type",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UserType"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "put": {
+              "summary": "Update user type by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/UserType"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The updated user type",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UserType"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete user type by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The deleted user type",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/UserType"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+
+          "/universities": {
+            "get": {
+              "summary": "Get all universities",
+              "responses": {
+                "200": {
+                  "description": "A list of universities",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/University"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "post": {
+              "summary": "Create a new university",
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/University"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The newly created university",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/University"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/universities/{id}": {
+            "get": {
+              "summary": "Get university by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The university",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/University"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "put": {
+              "summary": "Update university by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/University"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The updated university",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/University"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete university by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The deleted university",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/University"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+
+          "/types": {
+            "get": {
+              "summary": "Get all types",
+              "responses": {
+                "200": {
+                  "description": "A list of types",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Type"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "post": {
+              "summary": "Create a new type",
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Type"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The newly created type",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Type"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+
+          "/types/{id}": {
+            "get": {
+              "summary": "Get type by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The type",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Type"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "put": {
+              "summary": "Update type by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Type"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The updated type",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Type"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete type by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The deleted type",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Type"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+
+          "/faculties": {
+            "get": {
+              "summary": "Get all faculties",
+              "responses": {
+                "200": {
+                  "description": "A list of faculties",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Faculty"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "post": {
+              "summary": "Create a new faculty",
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Faculty"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The newly created faculty",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Faculty"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+
+          "/faculties/{id}": {
+            "get": {
+              "summary": "Get faculty by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The faculty",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Faculty"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "put": {
+              "summary": "Update faculty by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Faculty"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The updated faculty",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Faculty"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete faculty by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The deleted faculty",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Faculty"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+
+          "/requests": {
+            "get": {
+              "summary": "Get all requests",
+              "responses": {
+                "200": {
+                  "description": "A list of requests",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Request"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "post": {
+              "summary": "Create a new request",
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Request"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The newly created request",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Request"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+
+          "/requests/{id}": {
+            "get": {
+              "summary": "Get request by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The request",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Request"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "put": {
+              "summary": "Update request by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Request"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The updated request",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Request"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete request by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The deleted request",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Request"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/disciplines": {
+            "get": {
+              "summary": "Get all disciplines",
+              "responses": {
+                "200": {
+                  "description": "A list of disciplines",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Discipline"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "post": {
+              "summary": "Create a new discipline",
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Discipline"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The newly created discipline",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Discipline"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/disciplines/{id}": {
+            "get": {
+              "summary": "Get discipline by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The discipline",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Discipline"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "put": {
+              "summary": "Update discipline by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/Discipline"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "200": {
+                  "description": "The updated discipline",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Discipline"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete discipline by ID",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "integer"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "The deleted discipline",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Discipline"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+    
+    
+
+    "/discipline_types": {
+      "get": {
+        "summary": "Get all discipline types",
+        "responses": {
+          "200": {
+            "description": "A list of discipline types",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DisciplineType"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new discipline type",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisciplineType"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "The newly created discipline type",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DisciplineType"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/discipline_types/{id}": {
+      "get": {
+        "summary": "Get discipline type by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The discipline type",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DisciplineType"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update discipline type by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DisciplineType"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "The updated discipline type",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DisciplineType"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete discipline type by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The deleted discipline type",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DisciplineType"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+
+    "components": {
+        "schemas": {
+          "Discipline_type": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "discipline_id": {
+                "type": "integer"
+              },
+              "speciality_id": {
+                "type": "integer"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "Discipline": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "user_id": {
+                "type": "integer"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "Faculty": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "university_id": {
+                "type": "integer"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "Request": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name_university": {
+                "type": "string"
+              },
+              "telephone": {
+                "type": "string"
+              },
+              "university_id": {
+                "type": "integer"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "Review": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "text": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "university_id": {
+                "type": "integer"
+              },
+              "user_id": {
+                "type": "integer"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "Speciality": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "faculty_id": {
+                "type": "integer"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "Type": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "University": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "desc":{
+                "type": "string"
+              },
+              "img":{
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "User_type": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "user_id": {
+                "type": "integer"
+              },
+              "type_id": {
+                "type": "integer"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          },
+          "User": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "updatedAt": {
+                "type": "string",
+                "format": "date-time"
+              }
+            }
+          }
+        }
+      }
+}
+
